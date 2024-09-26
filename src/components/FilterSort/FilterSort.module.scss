@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.filterSort {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+  margin-bottom: $spacing-large;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.filterInput {
+  flex: 1;
+  padding: $spacing-small $spacing-medium;
+  font-size: $font-size-base;
+  color: $text-color-primary;
+  background-color: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: border-color $transition-speed ease-in-out,
+    box-shadow $transition-speed ease-in-out;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.3);
+  }
+}
+
+.sortButtons {
+  display: flex;
+  gap: $spacing-small;
+}
+
+.sortButton {
+  padding: $spacing-small $spacing-medium;
+  font-size: 0.9em;
+  color: $text-color-primary;
+  background-color: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all $transition-speed ease-in-out;
+
+  &:hover {
+    background-color: mix(white, $surface-color, 10%);
+  }
+
+  &.active {
+    background-color: $primary-color;
+    color: $text-color-primary;
+    border-color: $primary-color;
+  }
+}

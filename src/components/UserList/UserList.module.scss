@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.userList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-large;
+}
+
+.userCard {
+  background-color: $surface-color;
+  border-radius: $border-radius;
+  padding: $spacing-large;
+  box-shadow: $box-shadow;
+  transition: transform $transition-speed ease-in-out,
+    box-shadow $transition-speed ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: $spacing-medium;
+    color: $accent-color;
+  }
+
+  p {
+    margin: $spacing-small 0;
+    color: $text-color-secondary;
+  }
+}

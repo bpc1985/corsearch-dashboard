@@ -1,0 +1,29 @@
+@import "./styles/variables";
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-large;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color-primary;
+  background-color: $background-color;
+
+  h1 {
+    text-align: center;
+    margin-bottom: $spacing-large;
+    color: $accent-color;
+  }
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: $spacing-large;
+  font-size: 1.2em;
+}
+
+.error {
+  color: #ff4d4d;
+}
