@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./FilterSort.module.scss";
 
-interface FilterSortProps {
+export interface FilterSortProps {
   filterText: string;
   onFilterChange: (text: string) => void;
   sortField: "name" | "email";
