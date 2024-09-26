@@ -27,5 +27,7 @@ export const useUsers = () => {
     fetchUsers();
   }, [fetchUsers]);
 
-  return { users, isLoading, error, refetch: fetchUsers };
+  // Currently app does not support refetch feature
+  // return { users, isLoading, error, refetch: fetchUsers };
+  return { users, isLoading, error };
 };
