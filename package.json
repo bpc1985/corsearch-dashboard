@@ -1,5 +1,6 @@
 {
   "name": "corsearch-dashboard",
+  "author": "Hung Ho",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Corsearch Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple dashboard displays a list of users fetched from a REST API and allows the user to filter and sort the list. The application is built using React, TypeScript, SCSS and SASS with functional components and hooks
 
-Currently, two official plugins are available:
+This web app does not use any extra third-party libraries to support its simplicity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Webapp Link
 
-## Expanding the ESLint configuration
+https://corsearch-dashboard.netlify.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Project Screen Shot(s)
 
-- Configure the top-level `parserOptions` property like this:
+![Dashboard](https://i.postimg.cc/nhkmymQK/dashboard.png)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Unit Test Result
+![Unit Test Result](https://i.postimg.cc/g0tZJPsn/unit-tests.png)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Code Coverage
+![Code Coverage](https://i.postimg.cc/d1zZ2mzF/code-coverage.png)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation and Setup Instructions
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`
+
+To run unit test suite:
+
+`npm run test`
+
+To run test coverage:
+
+`npm run coverage`
+
+To start local dev server:
+
+`npm run dev`
+
+To visit app in localhost:
+
+`http://localhost:4000`
+
+To bundle or build project for deployment:
+
+`npm run build`
