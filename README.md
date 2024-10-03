@@ -10,13 +10,13 @@ https://corsearch-dashboard.netlify.app/
 
 ## Project Screen Shot(s)
 
-![Dashboard](https://i.postimg.cc/nhkmymQK/dashboard.png)
+![Dashboard](https://i.imgur.com/05SwDzw.png)
 
 Unit Test Result
-![Unit Test Result](https://i.postimg.cc/g0tZJPsn/unit-tests.png)
+![Unit Test Result](https://i.imgur.com/yykaEb6.png)
 
 Code Coverage
-![Code Coverage](https://i.postimg.cc/d1zZ2mzF/code-coverage.png)
+![Code Coverage](https://i.imgur.com/b9V0Ti6.png)
 
 ## Installation and Setup Instructions
 
